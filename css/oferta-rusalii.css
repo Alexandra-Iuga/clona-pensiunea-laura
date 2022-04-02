@@ -1,0 +1,25 @@
+.pachete {
+    width: calc(100% / 3 * 2);
+}
+
+.pachete a {
+    display: flex;
+    flex-direction: column;
+}
+
+.oferta {
+    max-width: 100%;
+    height: auto;
+}
+
+.oferta:hover {
+    opacity: 0.7;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .pachete {
+        width: 100%;
+    }
+}

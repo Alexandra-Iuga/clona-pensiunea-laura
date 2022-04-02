@@ -1,0 +1,275 @@
+.preturi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.preturi-wrapper {
+    width: calc(100% / 3 * 2); 
+}
+
+.preturi h1,
+.preturi h3,
+.preturi h4,
+.preturi h5 {
+    margin-bottom: var(--spacing-medium);
+}
+
+.preturi h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.preturi h4 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+.preturi h5 {
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.6;
+    font-size: 1.75rem;
+    color: var(--text-primary);
+}
+
+.preturi img {
+    width: 100%;
+    margin-bottom: var(--spacing-medium);
+}
+
+.preturi a:hover {
+    opacity: 0.7;
+    transition: .3s ease;
+}
+
+.preturi ul {
+    margin-bottom: var(--spacing-large);
+}
+
+.preturi li {
+    list-style-type: disc;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+    font-weight: 300;
+}
+
+.preturi form {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-small);
+}
+
+.preturi label,
+.preturi p {
+    font-size: 1.125rem;
+    color: var(--text-primary);
+    line-height: 1.6;
+    font-weight: bold;
+    font-family: var(--ff-Roboto);
+}
+
+#name, 
+#email, 
+#phone,
+#data-sosire,
+#data-plecare,
+#mesaj {
+    margin-bottom: var(--spacing-small);
+    border: 0; 
+    height: 2.125rem;
+    padding: 7px 0;
+    border-bottom: 1px solid #d2d2d2;
+    transition: 0.15s ease-in-out;  
+}
+
+#name:focus,
+#email:focus,
+#phone:focus,
+#data-sosire:focus,
+#data-plecare:focus,
+#mesaj:focus {
+    border-bottom: 2px solid var(--secundary-color);
+    outline: none;
+}
+
+#name, 
+#email, 
+#phone,
+#data-sosire,
+#data-plecare,
+#mesaj {
+    font-size: var(--fs-medium);
+    color: var(--text-primary);
+    font-family: var(--ff-Roboto);
+}
+
+.preturi input[type="number"] {
+    max-width: 25%;
+    line-height: 1.6;
+    margin-bottom: var(--spacing-small);
+}
+
+.preturi input[type="date"] {
+    background-color: var(--bg-color);
+}
+
+.preturi .tip-camera {
+    display: flex;
+    width: 100%;
+}
+
+.camera-matrimoniala,
+.camera-twin,
+.apartament {
+    width: calc(100% / 3);
+    display: flex;
+    justify-content: center;
+}
+
+.preturi input[type="radio"] {
+    position: relative;
+    top: var(--spacing-xs);
+}
+
+#mesaj {
+    width: 100%;
+    height: 10rem;
+    resize: none;
+}
+
+.preturi input[type="submit"] {
+    color: var(--text-white);
+    text-transform: uppercase;
+    font-size: var(--fs-small);
+    font-weight: 400;
+    background-color: var(--secundary-color);
+    border: none;
+    padding: 15px 33px;
+    width: fit-content;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px 0 rgb(31 171 242 / 14%), 
+                0 3px 1px -2px rgb(31 171 242 / 20%), 
+                0 1px 5px 0 rgb(31 171 242 / 12%);
+    cursor: pointer;
+    margin: var(--spacing-small) 0;
+}
+
+.preturi input[type="submit"]:hover {
+    box-shadow: 0 14px 26px -12px rgb(31 171 242 / 42%), 
+                0 4px 23px 0 rgb(0 0 0 / 12%), 
+                0 8px 10px -5px rgb(31 171 242 / 20%);
+}
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, 
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@media (max-width:768px) {
+    .preturi-wrapper {
+        width: 90%;
+    }
+
+    .tip-camera {
+        flex-direction: column;
+        
+    }
+    .camera-matrimoniala,
+    .camera-twin,
+    .apartament {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
