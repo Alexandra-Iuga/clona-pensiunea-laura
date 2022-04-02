@@ -1,5 +1,5 @@
 header {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .welcome {
@@ -241,8 +241,9 @@ main h3 {
     .recenzii .card {
         width: 100%;
     }
-    header {
-        min-height: 100%;
+    .welcome,
+    .overlay {
+        height: 100vh;
     }
 }
 
