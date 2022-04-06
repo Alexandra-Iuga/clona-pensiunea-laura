@@ -223,7 +223,7 @@ main {
     margin: 0 auto;
     display: none;
     position: fixed;
-    top: 50%;
+    top: 55%;
     left: 3%;
     border-radius: 50px;
     z-index: 5;
@@ -482,5 +482,8 @@ footer hr {
 @media (max-width:480px) {
     main {
         padding: var(--spacing-medium);
+    }
+    .call-text {
+        display: none;
     }
 }
